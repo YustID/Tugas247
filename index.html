@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Single Page Website</h1>
+      <h3>by Your Name</h3>
+    </header>
+    <div class="tab">
+      <button class="tablink btntab1" onclick="openTab(event, 'tab1')">Tab 1</button>
+      <button class="tablink btntab2" onclick="openTab(event, 'tab2')" disabled>Tab 2</button>
+      <button class="tablink btntab3" onclick="openTab(event, 'tab3')" disabled>Tab 3</button>
+
+      <div id="tab1" class="tabcontent">
+        <label for="inputA">Input a number (1-10000):</label>
+        <input type="number" id="inputA" min="1" max="10000" />
+        <button onclick="nextTab('tab1')">Next</button>
+      </div>
+
+      <div id="tab2" class="tabcontent">
+        <button onclick="generateNumbers()">Generate Numbers</button>
+        <table id="numbersTable"></table>
+        <button class="btnnext2" onclick="nextTab('tab2')" hidden>Next</button>
+      </div>
+
+      <div id="tab3" class="tabcontent">
+        <button onclick="findMissingNumber()">Find Missing Number</button>
+        <p id="missingNumber"></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Page created on May 4, 2023</p>
+    </footer>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
