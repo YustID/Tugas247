@@ -1,8 +1,8 @@
 /* styling for header and footer */
 header,
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: teal;
+  color: greenyellow;
   padding: 10px;
   text-align: center;
 }
@@ -17,5 +17,5 @@ footer {
 
 /* styling for active tab */
 .tablink.active {
-  background-color: #ccc;
+  background-color: green;
 }
